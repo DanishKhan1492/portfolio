@@ -72,6 +72,7 @@ No other change is needed because all asset paths are relative.
 
 ## Editing content
 
-All copy lives in `index.html`. Sections are numbered in order: hero, ticker, `#about`,
-`#experience`, `#highlights`, `#expertise`, `#credentials`, `#contact`. Visual tuning is at the
+All copy lives in `index.html`. Sections run in this order: hero, ticker, `#about`, `#experience`, `#leadership`, `#highlights`,
+`#expertise`, `#credentials`, `#contact`. Leadership deliberately sits ahead of the technical
+sections. Visual tuning is at the
 top of `css/style.css` in the `:root` block.
