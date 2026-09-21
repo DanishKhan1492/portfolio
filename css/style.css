@@ -69,7 +69,7 @@ b,strong{font-weight:600;color:var(--ink)}
 ::selection{background:var(--accent);color:var(--paper)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
 
-.wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:var(--pad)}
+.wrap{width:100%;min-width:0;max-width:var(--wrap);margin-inline:auto;padding-inline:var(--pad)}
 
 .skip{position:absolute;left:-9999px;top:0;z-index:200;background:var(--ink);color:var(--paper);padding:12px 20px;border-radius:0 0 10px 0}
 .skip:focus{left:0}
@@ -92,7 +92,7 @@ b,strong{font-weight:600;color:var(--ink)}
   border-bottom-color:var(--line-2);
   height:64px;
 }
-.nav-inner{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:var(--pad);display:flex;align-items:center;gap:24px}
+.nav-inner{width:100%;min-width:0;max-width:var(--wrap);margin-inline:auto;padding-inline:var(--pad);display:flex;align-items:center;gap:24px}
 
 .brand{display:flex;align-items:center;gap:12px;margin-right:auto;min-width:0}
 .monogram{
@@ -212,12 +212,11 @@ html[data-theme="dark"] .btn-primary:hover{filter:brightness(1.1)}
 
 .display{
   font-family:var(--display);font-weight:520;
-  font-size:clamp(3.1rem,11.2vw,9.2rem);
+  font-size:clamp(3.1rem,10.2vw,8.2rem);
   line-height:.9;letter-spacing:-.038em;
   margin:30px 0 0;font-variation-settings:"SOFT" 0,"WONK" 0,"opsz" 120;
 }
-.display .line{display:block;overflow:hidden}
-.display .line>span,.display .line{white-space:nowrap}
+.display .line{display:block;overflow:hidden;text-wrap:balance}
 .accent-word{
   font-style:italic;font-weight:400;
   color:transparent;
