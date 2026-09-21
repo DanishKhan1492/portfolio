@@ -1,6 +1,6 @@
-# Muhammad Danish Khan — Portfolio
+# Muhammad Danish Khan · Portfolio
 
-A hand-built, single-page portfolio site. No framework, no build step — plain HTML, CSS and
+A hand-built, single-page portfolio site. No framework, no build step, plain HTML, CSS and
 vanilla JavaScript, deployed statically with GitHub Pages.
 
 **Live site:** https://danishkhan1492.github.io/portfolio/
@@ -24,19 +24,19 @@ robots.txt
 
 ## Design notes
 
-- **Type pairing** — Fraunces (variable serif) for display, Inter for body, JetBrains Mono for
+- **Type pairing**: Fraunces (variable serif) for display, Inter for body, JetBrains Mono for
   labels and metadata. All fall back to system serif/sans/mono if the webfonts don't load.
-- **Palette** — warm paper and deep ink, with an emerald accent taken from the résumé heading
+- **Palette**: warm paper and deep ink, with an emerald accent taken from the résumé heading
   and a brass secondary. Both light and dark themes are defined as CSS custom properties on
   `[data-theme]`; the toggle persists to `localStorage` and respects `prefers-color-scheme`
   on first visit.
-- **Motion** — `IntersectionObserver` scroll reveals with per-sibling stagger, an animated
+- **Motion**: `IntersectionObserver` scroll reveals with per-sibling stagger, an animated
   hero gradient mesh plus film grain, a skills marquee that pauses on hover, and a scroll
   progress bar. Everything collapses under `prefers-reduced-motion: reduce`.
-- **GitHub Pages safe** — every internal asset link is *relative* (`./css/...`, `./assets/...`),
+- **GitHub Pages safe**: every internal asset link is *relative* (`./css/...`, `./assets/...`),
   so the site works correctly under the `/portfolio/` project-page subpath as well as at a
   domain root.
-- **Accessibility** — skip link, landmark regions, keyboard-operable menu, visible focus
+- **Accessibility**: skip link, landmark regions, keyboard-operable menu, visible focus
   rings, `aria-current`-style active nav state, semantic `<time>` elements, and JSON-LD
   `Person` structured data. A print stylesheet turns the page into a clean résumé.
 
@@ -67,8 +67,8 @@ From the command line, step 1 is:
 gh api -X POST repos/DanishKhan1492/portfolio/pages -f source=github_actions
 ```
 
-To use a custom domain instead, add a `CNAME` file at the repository root and point DNS at it —
-no other change is needed because all asset paths are relative.
+To use a custom domain instead, add a `CNAME` file at the repository root and point DNS at it.
+No other change is needed because all asset paths are relative.
 
 ## Editing content
 
